@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.BookDetailsActivity"
+    android:background="#BCF1ED">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="670dp"
+        android:padding="20dp"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="580dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#ccc"
+            app:cardCornerRadius="26dp"
+            app:cardElevation="4dp"
+            android:layout_marginTop="40dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:padding="24dp">
+
+                <EditText
+                    android:id="@+id/title_editTxt"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="Tajuk"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/bg_text"
+                    android:inputType="textPersonName"
+                    app:layout_constraintHorizontal_bias="0.508"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/details_editTxt"
+                    android:layout_width="350dp"
+                    android:layout_height="290dp"
+                    android:layout_below="@+id/title_editTxt"
+                    android:layout_marginTop="15dp"
+                    android:hint="Maklumat"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/bg_text"
+                    android:textSize="18sp"
+                    app:layout_constraintHorizontal_bias="0.523"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/update_btn"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="410dp"
+                    android:text="Kemaskini"
+                    android:background="@drawable/rounded_button"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/delete_btn"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="470dp"
+                    android:text="Padam"
+                    android:background="@drawable/rounded_button"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/ic_arrow_back"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="690dp"
+        android:src="@drawable/ic_arrow_back"
+        app:backgroundTint="#000000"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

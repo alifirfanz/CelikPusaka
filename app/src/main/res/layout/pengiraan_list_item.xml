@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="50dp"
+    android:elevation="10dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#EBECF0">
+
+
+    <!-- android:layout_marginLeft="310dp"-->
+    <ImageView
+        android:id="@+id/update_imageborang"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/editicon"
+        android:text="Padam"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="310dp"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+
+
+        <!-- Maklumat Si Mati-->
+        <TextView
+            android:id="@+id/maklumatsimatitext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1) Si Mati:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="i. Nama:"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/maklumatsimatitext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/namatext"
+            android:text="Nama Penuh"
+            android:layout_below="@+id/maklumatsimatitext"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="95dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ii. Jantina:"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/namatext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gendertext"
+            android:text="Jantina"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_below="@+id/namatext"
+            android:layout_marginLeft="110dp" />
+
+        <!-- Jumlah harta Si Mati-->
+        <!-- android:text="......................................................"-->
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/gendertext"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/maklumatjumhartatext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2) Jumlah Harta:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@+id/text"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="i. Jumlah Harta: RM"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/maklumatjumhartatext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/jumhartatext"
+            android:text="Harta"
+            android:layout_below="@+id/maklumatjumhartatext"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="189dp"
+            android:layout_alignParentLeft="true"/>
+
+
+        <!-- kos pengurusan jenazah-->
+        <!--android:text="......................................................"-->
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/jumhartatext"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/maklumatPengurusanText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3) Jumlah Pengurusan jenazah:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@+id/text1"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="i. Kos pengurusan: RM"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/maklumatPengurusanText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pengurusantext"
+            android:text="Kos"
+            android:layout_below="@+id/maklumatPengurusanText"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="213dp"
+            android:layout_alignParentLeft="true"/>
+
+
+        <!-- bil ahli keluarga -->
+        <!--android:text="......................................................"-->
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/pengurusantext"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/maklumatWarisUtama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4) Bilangan Waris Utama:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@+id/text2"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="i. Suami:"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/maklumatWarisUtama" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bilsuamitext"
+            android:text="Suami"
+            android:layout_below="@+id/maklumatWarisUtama"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="95dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ii. Isteri:"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/bilsuamitext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bilisteritext"
+            android:text="Isteri"
+            android:layout_below="@+id/bilsuamitext"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="95dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="iii. Bapa:"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/bilisteritext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bilbapatext"
+            android:text="Bapa"
+            android:layout_below="@+id/bilisteritext"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="95dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="iv. Ibu:"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/bilbapatext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bilibutext"
+            android:text="Ibu"
+            android:layout_below="@+id/bilbapatext"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="75dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="v. Anak(P):"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/bilibutext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bilanakptext"
+            android:layout_below="@+id/bilibutext"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:text="Anak(P)"
+            android:layout_marginLeft="115dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="vi. Anak(L):"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/bilanakptext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bilanakltext"
+            android:layout_below="@+id/bilanakptext"
+            android:text="Anak(L)"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="125dp"
+            android:layout_alignParentLeft="true"/>
+
+
+        <!-- baki harta dan jumlah harta yang dpt -->
+        <!--android:text="......................................................"-->
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/bilanakltext"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/maklumatbakihartatext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text3"
+            android:text="5) Baki Harta Keseluruhan:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="i. Baki Harta:"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/maklumatbakihartatext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bakihartatext"
+            android:text="Baki Harta"
+            android:layout_below="@+id/maklumatbakihartatext"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="130dp"
+            android:layout_alignParentLeft="true"/>
+
+
+
+        <!--jumlaha harta agihan -->
+        <!-- android:text="......................................................"-->
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/bakihartatext"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/maklumathartatext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6) Jumlah Agihan Harta:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_below="@+id/text4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/maklumathartatext1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*(Jumlah harta didarab dengan bilangan)"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#1520A6"
+            android:layout_below="@+id/maklumathartatext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="i. Suami:"
+            android:id="@+id/suamiText"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/maklumathartatext1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/suamitext"
+            android:text="Suami"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_below="@+id/maklumathartatext1"
+            android:layout_marginLeft="100dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ii. Isteri:"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/suamitext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/isteritext"
+            android:text="Isteri"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_below="@+id/suamitext"
+            android:layout_marginLeft="90dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="iii. Bapa:"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/isteritext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bapatext"
+            android:text="Bapa"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_below="@+id/isteritext"
+            android:layout_marginLeft="100dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="iv. Ibu:"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/bapatext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ibutext"
+            android:text="Ibu"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_below="@+id/bapatext"
+            android:layout_marginLeft="80dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="v. Anak(L):"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/ibutext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/anakLtext"
+            android:text="Anak(L)"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_below="@+id/ibutext"
+            android:layout_marginLeft="110dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="vi. Anak(P):"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/anakLtext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/anakPtext"
+            android:text="Anak(P)"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_below="@+id/anakLtext"
+            android:layout_marginLeft="120dp" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

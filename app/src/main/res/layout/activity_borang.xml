@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.Borang"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#BCF1ED">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <FrameLayout
+            android:id="@+id/frameHeader"
+            android:layout_width="match_parent"
+            android:layout_height="340dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnback"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_arrow_back"
+                app:backgroundTint="#000000"/>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                android:layout_gravity="end"
+                android:elevation="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/borang1"
+                app:riv_corner_radius_bottom_left="40dp"
+                app:riv_corner_radius_bottom_right="40dp"
+                app:riv_corner_radius_top_left="40dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/bg_calen"
+                android:backgroundTint="#000336"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="Borang"
+                    android:textColor="@color/btColorWhite"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="Klik pada tulisan untuk muat naik borang"
+                    android:textColor="@color/btColorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="30dp"/>
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_below="@+id/frameHeader"
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:padding="20dp"
+            android:layout_marginTop="-30dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="470dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#ccc"
+                app:cardCornerRadius="26dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:padding="24dp">
+
+                    <ListView
+                        android:id="@+id/listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"/>
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

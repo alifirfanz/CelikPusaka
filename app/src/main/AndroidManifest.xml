@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.celikpusaka">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Admin.NewPasswordAdmin" />
+        <activity android:name=".Admin.ForgetPasswordAdmin" />
+        <activity android:name=".DemoPengiraanHarta" />
+        <activity android:name=".BookListActivity2" />
+        <activity android:name=".BooksDetailsActivity2" />
+        <activity android:name=".RecyclerViewListVideo" />
+        <activity android:name=".RecyclerViewListBorang" />
+        <activity android:name=".RecyclerViewList1" />
+        <activity android:name=".AddHebahan" />
+        <activity android:name=".RecyclerViewList" />
+        <activity android:name=".Admin.NewBookActivity" />
+        <activity android:name=".Admin.BookDetailsActivity" />
+        <activity android:name=".Admin.BookListActivity" />
+        <activity android:name=".user.CalendarEvent" />
+        <activity android:name=".ResetPassword" />
+        <activity android:name=".user.NewPassword" />
+        <activity android:name=".user.ForgetPassword" />
+        <activity android:name=".Admin.ViewVideoAdmin" />
+        <activity android:name=".Admin.ViewNotaAdmin" />
+        <activity android:name=".Admin.ViewBorangAdmin" />
+        <activity android:name=".Admin.AddVideoAdmin" />
+        <activity android:name=".Admin.paidemo" />
+        <activity android:name=".Admin.linedemo" />
+        <activity android:name=".Admin.bardemo" />
+        <activity android:name=".user.QuizActivity" />
+        <activity android:name=".user.StartingScreenActivity" />
+        <activity android:name=".user.DashboardLaporanHarta" />
+        <activity android:name=".user.PengiraanHarta" />
+        <activity android:name=".user.DashboardPengiraanHarta" />
+        <activity android:name=".user.UserProfile" />
+        <activity android:name=".Admin.LoginAdmin" />
+        <activity android:name=".user.AddFeedback" />
+        <activity android:name=".Admin.AddBorang" />
+        <activity android:name=".Admin.AddNota" />
+        <activity android:name=".Admin.ViewStatistik" />
+        <activity android:name=".Admin.ViewFeedback" />
+        <activity android:name=".user.Borang" />
+        <activity android:name=".user.Video" />
+        <activity android:name=".user.Nota" />
+        <activity android:name=".user.InfoUser" />
+        <activity android:name=".Admin.InfoAdmin" />
+        <activity android:name=".user.DashboardUser" />
+        <activity android:name=".Admin.DashboardAdmin" />
+        <activity android:name=".user.SignUp" />
+        <activity android:name=".user.Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

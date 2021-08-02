@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AddBorang"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#BCF1ED">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="250dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#ccc"
+            app:cardCornerRadius="26dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:padding="24dp">
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="320dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_text"
+                    android:hint="Pilih Borang"
+                    android:paddingLeft="20dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:drawableStart="@drawable/ic_suggest"
+                    android:drawablePadding="10dp"/>
+
+                <Button
+                    android:layout_below="@+id/editText"
+                    android:id="@+id/btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="simpan"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnback"
+        android:layout_alignParentStart="true"
+
+        android:src="@drawable/ic_arrow_back"
+        app:backgroundTint="#000000"/>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/month"
+            android:text="Month"
+            android:fontFamily="@font/bungee"
+            android:textSize="35sp"
+            android:layout_marginLeft="25dp"
+            android:textColor="#000000"
+            android:padding="8dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/calendarprogram"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="60dp"/>
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/advertisement"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="60dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/sales"
+            android:text="Program"
+            android:layout_below="@+id/month"
+            android:fontFamily="@font/muli_black"
+            android:textSize="25sp"
+            android:padding="8dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

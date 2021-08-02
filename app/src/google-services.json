@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1097924611540",
+    "firebase_url": "https://celik-pusaka-default-rtdb.firebaseio.com",
+    "project_id": "celik-pusaka",
+    "storage_bucket": "celik-pusaka.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097924611540:android:d7fad1c0d2d150d1d21a41",
+        "android_client_info": {
+          "package_name": "com.example.celikpusaka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097924611540-kphdtbh0o1k4phr21rnh62rq381prnga.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.celikpusaka",
+            "certificate_hash": "e06eddf818a08d579904b44ffdda20e26ddd9a6e"
+          }
+        },
+        {
+          "client_id": "1097924611540-su3674en7o6itg5q7oa3v9ukfdoaknlu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ6q1yWgBOq6uQqHOaT5KDnMp40i0hGRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097924611540-su3674en7o6itg5q7oa3v9ukfdoaknlu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

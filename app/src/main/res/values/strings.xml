@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">Celik Pusaka</string>
+
+    <string-array name="numbers">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="uni">
+        <item>Pilih Universiti</item>
+        <item>UM</item>
+        <item>USM</item>
+        <item>UKM</item>
+        <item>UPM</item>
+        <item>UTM</item>
+        <item>UiTM</item>
+        <item>UiAM</item>
+        <item>UMS</item>
+        <item>UNIMAS</item>
+        <item>UUM</item>
+        <item>UPSI</item>
+        <item>UTHM</item>
+        <item>UniMAP</item>
+        <item>UMT</item>
+        <item>UMP</item>
+        <item>USIM</item>
+        <item>UniSZA</item>
+        <item>UMK</item>
+        <item>UPNM</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Pilih Jantina</item>
+        <item>Lelaki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string-array name="day">
+        <item>Pilih Hari</item>
+        <item>Isnin</item>
+        <item>Selasa</item>
+        <item>Rabu</item>
+        <item>Khamis</item>
+        <item>Jumaat</item>
+        <item>Sabtu</item>
+        <item>Ahad</item>
+    </string-array>
+
+    <string-array name="suami">
+        <item>Suami</item>
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="isteri">
+        <item>Isteri</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+
+    <string-array name="bapa">
+        <item>Bapa</item>
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="ibu">
+        <item>Ibu</item>
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="anaklelaki">
+        <item>Anak Lelaki</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="anakperempuan">
+        <item>Anak Perempuan</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Kod</string>
+
+</resources>

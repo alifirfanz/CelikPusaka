@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.Login"
+    android:orientation="horizontal"
+    android:background="#6cbbc7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="#BCF1ED">
+
+            <TextView
+                android:id="@+id/logo_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Celik Pusaka"
+                android:textSize="42sp"
+                android:fontFamily="@font/bungee"
+                android:transitionName="logo_text"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="890dp"
+            android:layout_marginTop="-245dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="890dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#ccc"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="24dp"
+                    android:background="#fff">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Daftar Akaun"
+                        android:textColor="#08353a"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/reg_username"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:hint="Nama Pengguna"
+                        android:textColorHint="@color/btColorBlack"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="15">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_username"
+                            android:drawablePadding="7dp"
+                            android:textSize="16sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/reg_password"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/reg_username"
+                        android:hint="Kata Laluan"
+                        android:textColorHint="@color/btColorBlack"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:drawableStart="@drawable/ic_lock"
+                            android:drawablePadding="7dp"
+                            android:textSize="16sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/reg_name"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/reg_password"
+                        android:layout_marginTop="15dp"
+                        android:hint="Nama Penuh"
+                        android:textColorHint="@color/btColorBlack">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:drawableStart="@drawable/ic_fullname"
+                            android:drawablePadding="7dp"
+                            android:textSize="16sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/spinner1"
+                        android:layout_below="@+id/reg_name"
+                        android:layout_centerHorizontal="true"
+                        android:paddingLeft="30dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/spinner_rect"/>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/reg_phoneNo"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spinner1"
+                        android:layout_marginTop="15dp"
+                        android:hint="Nombor Telefon"
+                        android:textColorHint="@color/btColorBlack">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:textSize="16sp"
+                            android:drawableStart="@drawable/ic_phone"
+                            android:drawablePadding="7dp"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/reg_email"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/reg_phoneNo"
+                        android:layout_marginTop="15dp"
+                        android:hint="Emel"
+                        android:textColorHint="@color/btColorBlack">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:drawableStart="@drawable/ic_email"
+                            android:drawablePadding="7dp"
+                            android:textSize="16sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/spinner"
+                        android:textSize="24dp"
+                        android:layout_below="@+id/reg_email"
+                        android:layout_centerHorizontal="true"
+                        android:paddingLeft="30dp"
+                        android:background="@drawable/spinner_rect"/>
+
+                    <Button
+                        android:id="@+id/reg_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spinner"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/round_button3"
+                        android:text="Daftar Akaun"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/reg_login_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/reg_btn"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/rounded_button2"
+                        android:elevation="0dp"
+                        android:text="Log Masuk"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

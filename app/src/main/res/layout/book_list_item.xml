@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--  android:layout_marginLeft="310dp"-->
+        <ImageView
+            android:id="@+id/update_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/edit"
+            android:text="Padam"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="310dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/title_txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tajuk Nota"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+            android:layout_marginTop="2dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_below="@+id/title_txtView"
+            android:id="@+id/details_txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maklumat"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+            android:layout_marginTop="2dp" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

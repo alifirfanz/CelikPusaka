@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.Login"
+    android:padding="20dp"
+    android:background="#BCF1ED">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/logo_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Celik Pusaka"
+            android:textSize="34sp"
+            android:fontFamily="@font/bungee"
+            android:transitionName="logo_text"
+            android:layout_marginTop="-20dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            app:cardCornerRadius="60dp"
+            android:layout_marginTop="2dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_button2"
+                android:padding="10dp">
+
+                <!--android:textSize="30sp"-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Info"
+                    android:textSize="28sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="80dp" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/info"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/program"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            app:cardCornerRadius="60dp"
+            android:layout_marginTop="20dp"
+            app:cardElevation="4dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_button2"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Program"
+                    android:textSize="28sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:maxHeight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/program"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="60dp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            app:cardCornerRadius="120dp"
+            android:layout_marginTop="20dp"
+            app:cardElevation="4dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_button2"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maklum Balas"
+                    android:textSize="28sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="25dp" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/maklumbalas"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="45dp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/statistic"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            app:cardCornerRadius="120dp"
+            android:layout_marginTop="20dp"
+            app:cardElevation="4dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_button2"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Statistik"
+                    android:textSize="28sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:maxHeight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/statistic"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="60dp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            app:cardCornerRadius="120dp"
+            android:layout_marginTop="20dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_button2"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log Keluar"
+                    android:textSize="28sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="50dp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/logout"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="55dp"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</ScrollView>

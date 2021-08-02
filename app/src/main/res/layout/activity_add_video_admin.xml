@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AddVideoAdmin"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#BCF1ED">
+
+
+    <!-- android:layout_marginTop="110dp"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:layout_marginTop="80dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="560dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#ccc"
+            app:cardCornerRadius="26dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff">
+
+
+                <!-- android:layout_width="350dp"-->
+                <EditText
+                    android:id="@+id/et_video_name"
+                    android:layout_width="290dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_text"
+                    android:hint="Tajuk video"
+                    android:paddingLeft="20dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:drawableStart="@drawable/ic_video_label_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:autoText="true"/>
+
+
+                <VideoView
+                    android:id="@+id/videoview_main"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_below="@+id/et_video_name"
+                    android:backgroundTint="#000000"/>
+
+                <!--
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih Video"
+                    android:clickable="true"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="ChooseVideo"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingTop="15dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/videoview_main"
+                    android:layout_marginTop="10dp"/>   -->
+
+                <Button
+                    android:id="@+id/txt1"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih Video"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="ChooseVideo"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:background="@drawable/rounded_button"
+                    android:layout_below="@+id/videoview_main"
+                    android:layout_marginTop="20dp"/>
+
+
+                <Button
+                    android:id="@+id/button_upload_main"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="simpan"
+                    android:layout_below="@+id/txt1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <ProgressBar
+                    android:layout_below="@+id/button_upload_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:indeterminate="true"
+                    android:layout_marginTop="10dp"
+                    android:indeterminateTint="@android:color/holo_blue_dark"
+                    android:visibility="invisible"
+                    android:id="@+id/progressBar_main"/>
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnback"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_arrow_back"
+        app:backgroundTint="#000000"/>
+
+
+</RelativeLayout>
